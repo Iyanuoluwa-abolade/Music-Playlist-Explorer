@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Playlist Explorer</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/img.jpeg">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class ="banner">
+        <h1>Music Playlist Explorer</h1>
+    </header>
+
+    <main>
+        <div class ="box">
+            <div class="playlist-cards" id="1">
+                <img src="https://picsum.photos/id/36/200" alt="Late Night Drive" width ="200" height = "200">
+                <p>Late Night Drive </p>
+                <h5>Melody Haven</h5>
+                <div class="like button">
+                    <button class ="like-button">
+                        <i class="fa-solid fa-heart"></i></i>
+                        <span class="like-counter">0</span>
+                    </button>
+                    <button class="open-modal"></button>
+                </div>
+            </div>
+
+            <div class="playlist-cards" id="2">
+                <img src="https://picsum.photos/id/117/200" alt="That Summer '16 Feeling" width = "200" height = "200">
+                <p>That Summer '16 Feeling'</p>
+                <h5>Grove Guardian</h5>
+                <div class="like button">
+                    <button class ="like-button">
+                        <i class="fa-solid fa-heart"></i></i>
+                        <span class="like-counter">0</span>
+                    </button>
+                    <button class="open-modal"></button>
+                </div>
+            </div>
+
+            <div class="playlist-cards" id="3">
+                <img src="https://picsum.photos/id/1077/200" alt="Workout Beats" width = "200" height = "200" >
+                <p>Workout Beats</p>
+                <h5>Harmony Herald</h5>
+                <!-- <div class="like button"></div> -->
+                <button class ="like-button">
+                    <i class="fa-solid fa-heart"></i></i>
+                    <span class="like-counter">0</span>
+                </button>
+                <button class="open-modal"></button>
+            </div>
+
+            <div class="playlist-cards" id="4">
+                <img src="https://picsum.photos/id/314/200" alt="Road Trip Anthems" width = "200" height = "200">
+                <p>Road Trip Anthems</p>
+                <h5>Playlist Pioneer</h5>
+                <!-- <div class="like button"></div> -->
+                <button class ="like-button">
+                    <i class="fa-solid fa-heart"></i></i>
+                    <span class="like-counter">0</span>
+                </button>
+                <button class="open-modal"></button>
+            </div>
+
+            <div class="playlist-cards" id="5">
+                <img src="https://picsum.photos/id/449/200" alt="Boss Chick Energy" width = "200" height = "200">
+                <p>Boss Chick Energy</p>
+                <h5>Tempo Tactician</h5>
+                <button class ="like-button">
+                    <i class="fa-solid fa-heart"></i></i>
+                    <span class="like-counter">0</span>
+                </button>
+                <button class="open-modal"></button>
+            </div>
+
+            <div class="playlist-cards" id="6">
+                <img src="https://picsum.photos/id/115/200" alt="Rainy Nights" width = "200" height = "200">
+                <p>Rainy nights</p>
+                <h5>Sonic Sage</h5>
+                <button class ="like-button">
+                    <i class="fa-solid fa-heart"></i></i>
+                    <span class="like-counter">0</span>
+                </button>
+                <button class="open-modal"></button>
+            </div>
+
+            <div class="playlist-cards" id="7">
+                <img src="https://picsum.photos/id/815/200" alt="90's R&B" width = "200" height = "200">
+                <p>90's R&B</p>
+                <h5>Vinyl Virtuoso</h5>
+                <button class ="like-button">
+                    <i class="fa-solid fa-heart"></i></i>
+                    <span class="like-counter">0</span>
+                </button>
+                <button class="open-modal"></button>
+            </div>
+
+            <div class="playlist-cards" id="8">
+                <img src="https://picsum.photos/id/22/200" alt="Nothing But The Classics" width = "200" height = "200">
+                <p>Nothing But The Classics</p>
+                <h5>The Echo Enthusiast</h5>
+                <button class ="like-button">
+
+                    <span class="like-counter">0</span>
+                </button>
+                <button class="open-modal"></button>
+            </div>
+        </div>
+    </main>
+
+
+<!-- modal structure -->
+    <div id="playlistModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="playlistImage" src="" alt="playlistImage">
+            <h1 id="playlistName"></h1>
+            <p id="playlistCreator"></p>
+            <button id="shuffle-button" class="shuffle-button">shuffle</button>
+
+            <div class="modal-songs">
+
+                <div class="song">
+                    <div class="song-details">
+                        <!-- <img src="assets/img/playlist.png" alt="Song cover" width = "200" height = "200" class ="song-cover">
+                     <div class="song-details"> -->
+                        <!-- <p id="modal-song-title" class="song-title">title</p>
+                        <p id="modal-song-artist"class="song-artist">Artist Name</p>
+                        <p id="modal-song-album" class="song-album">Album Name</p> --> -->
+                    </div>
+                    <p class="song-duration">2:15</p>
+
+                </div>
+            <!-- <p id="PlaylistLocation">Location</p> -->
+            <!-- <div id="artistLineup"> -->
+                <!-- Lineup -->
+            <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+    <script src="data/data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
